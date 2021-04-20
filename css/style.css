@@ -1,0 +1,45 @@
+body{
+    margin:2rem 5rem;
+    text-align:center;
+}
+.progress-container{
+    display:flex;
+    position:fixed;
+    top:7%;
+    left:29%;
+    padding:0.2rem;
+    z-index:100;
+    border:1px solid white;
+
+}
+
+.progress-wrapper{
+    border:1px solid rgb(240, 162, 17);
+    padding:2px;
+    background-color:white;
+    width:15rem;
+    height:1.5rem;
+   
+}
+
+
+.progress-wrapper:last-child{
+    margin-left:4rem;
+   
+}
+
+
+#player_1-progress{
+    background-color:rgb(51, 102, 9);
+    width:0%;
+    height:100%;
+    transition:0.3s;
+}  
+
+#player_2-progress{
+   background-color: rgb(22, 7, 90);
+   width:0%;
+   height:100%;
+   transition:0.3s;
+   transform:rotate(180deg);
+}
