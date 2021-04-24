@@ -101,7 +101,7 @@ function moveEverything() {
 			player2Score++; // must be BEFORE ballReset()
           
 			ballReset();
-            player_2.style.width += (playCount*10/player2Score)+"%";
+            player_2.style.width = (player2Score/playCount)*100+"%";
 		}
 	}
 	if(ballX > canvas.width) {
@@ -114,7 +114,7 @@ function moveEverything() {
 			ballSpeedY = deltaY * 0.35;
 		} else {
 			player1Score++; // must be BEFORE ballReset()
-            player_1.style.width += (playCount*10/player1Score)+"%";	
+            player_1.style.width = (player1Score/playCount)*100+"%";	
 			ballReset();
           
 		}
